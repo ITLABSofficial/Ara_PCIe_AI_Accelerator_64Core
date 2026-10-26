@@ -2,6 +2,7 @@
 **Commercial AI Accelerator Card (Durum B+): 65.5 TFLOPS FP16, 128 GB HBM3e, PCIe Gen5 x16, 229W TDP**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Academic Paper](https://img.shields.io/badge/Research_Paper-Read_PAPER.md-blueviolet.svg)](PAPER.md)
 [![Form_Factor](https://img.shields.io/badge/Form_Factor-PCIe_Gen5_x16_Dual--Slot-blue.svg)]()
 [![Compute](https://img.shields.io/badge/Compute_Throughput-65.5_TFLOPS_FP16-brightgreen.svg)]()
 [![Memory](https://img.shields.io/badge/Memory_Capacity-128_GB_HBM3e_(3.2_TB%2Fs)-orange.svg)]()
