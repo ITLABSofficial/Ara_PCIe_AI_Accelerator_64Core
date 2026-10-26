@@ -88,7 +88,7 @@ Memory-bound normalization (RMSNorm), non-linear activations (SwiGLU), and onlin
 
 ### 3.1 Bit-Exact End-to-End LLaMA-3 Transformer Layer Verification
 
-To prove functional correctness, an end-to-end forward pass of a full **LLaMA-3 8B Transformer Layer** (hidden dimension $d_{model} = 4,096$, intermediate dimension $d_{ffn} = 14,336$, 32 attention heads) was executed on the 64-core hardware accelerator in simulation:
+To prove functional correctness, an end-to-end forward pass of a full **LLaMA-3 8B Transformer Layer** (hidden dimension $d_{model} = 4,096$, intermediate dimension $d_{ffn} = 14,336$, 32 attention heads) was executed on the 64-core hardware accelerator in simulation (`tb/tb_ara_llm_transformer_layer.sv` and `tb/tb_ara_64core_128gb_full_soc.sv`):
 
 ```
 [STAGE 1] Base-Die PIM: Input RMSNorm-1 (RMS = 0.368248)               [PASS]
