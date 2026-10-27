@@ -1,0 +1,39 @@
+SBY 22:04:24 [formal/formal_pcie_dma] Removing directory '/run/media/it/WD_HDD/Sierra hmb bellekler/show/Ara_MultiCore_WSE_HBM3/formal/formal_pcie_dma'.
+SBY 22:04:24 [formal/formal_pcie_dma] Copy '/run/media/it/WD_HDD/Sierra hmb bellekler/show/Ara_MultiCore_WSE_HBM3/rtl/ara_pcie_dma_engine.sv' to '/run/media/it/WD_HDD/Sierra hmb bellekler/show/Ara_MultiCore_WSE_HBM3/formal/formal_pcie_dma/src/ara_pcie_dma_engine.sv'.
+SBY 22:04:24 [formal/formal_pcie_dma] engine_0: smtbmc z3
+SBY 22:04:24 [formal/formal_pcie_dma] base: starting process "cd formal/formal_pcie_dma/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 22:04:25 [formal/formal_pcie_dma] base: finished (returncode=0)
+SBY 22:04:25 [formal/formal_pcie_dma] prep: starting process "cd formal/formal_pcie_dma/model; yosys -ql design_prep.log design_prep.ys"
+SBY 22:04:26 [formal/formal_pcie_dma] prep: finished (returncode=0)
+SBY 22:04:26 [formal/formal_pcie_dma] smt2: starting process "cd formal/formal_pcie_dma/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 22:04:26 [formal/formal_pcie_dma] smt2: finished (returncode=0)
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: starting process "cd formal/formal_pcie_dma; yosys-smtbmc -s z3 --presat --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Solver: z3
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 22:04:26 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 22:04:27 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 22:04:27 [formal/formal_pcie_dma] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 22:04:27 [formal/formal_pcie_dma] engine_0: ##   0:00:01  Checking assertions in step 6..
+SBY 22:04:27 [formal/formal_pcie_dma] engine_0: ##   0:00:01  Checking assumptions in step 7..
+SBY 22:05:01 [formal/formal_pcie_dma] engine_0: ##   0:00:35  Checking assertions in step 7..
+SBY 22:05:01 [formal/formal_pcie_dma] engine_0: ##   0:00:35  Checking assumptions in step 8..
+SBY 22:05:02 [formal/formal_pcie_dma] engine_0: ##   0:00:36  Checking assertions in step 8..
+SBY 22:05:04 [formal/formal_pcie_dma] engine_0: ##   0:00:38  Checking assumptions in step 9..
+SBY 22:05:10 [formal/formal_pcie_dma] engine_0: ##   0:00:44  Checking assertions in step 9..
+SBY 22:05:14 [formal/formal_pcie_dma] engine_0: ##   0:00:47  Status: passed
+SBY 22:05:14 [formal/formal_pcie_dma] engine_0: finished (returncode=0)
+SBY 22:05:14 [formal/formal_pcie_dma] engine_0: Status returned by engine: pass
+SBY 22:05:14 [formal/formal_pcie_dma] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:49 (49)
+SBY 22:05:14 [formal/formal_pcie_dma] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:47 (47)
+SBY 22:05:14 [formal/formal_pcie_dma] summary: engine_0 (smtbmc z3) returned pass
+SBY 22:05:14 [formal/formal_pcie_dma] summary: engine_0 did not produce any traces
+SBY 22:05:14 [formal/formal_pcie_dma] DONE (PASS, rc=0)

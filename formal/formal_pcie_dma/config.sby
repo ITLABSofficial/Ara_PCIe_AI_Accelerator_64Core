@@ -1,0 +1,13 @@
+[options]
+mode bmc
+depth 10
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal ara_pcie_dma_engine.sv
+prep -top ara_pcie_dma_engine
+
+[files]
+rtl/ara_pcie_dma_engine.sv
